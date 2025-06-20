@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://uutq4belcj7g"]
+
+[ext_resource type="Script" path="res://scenes/text_box.gd" id="1_qtd1y"]
+[ext_resource type="Texture2D" uid="uid://bjuxgchom1188" path="res://assets/text_box_bg.png" id="1_vmska"]
+[ext_resource type="FontFile" uid="uid://47bq3s8dc0lt" path="res://assets/font/Adventurer.ttf" id="2_rwibo"]
+[ext_resource type="FontFile" uid="uid://dtlbgtbrjv7md" path="res://assets/font/LastPriestess.ttf" id="3_iee8y"]
+
+[node name="TextBox" type="CanvasLayer"]
+script = ExtResource("1_qtd1y")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -195.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_vmska")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Start" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(23, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_rwibo")
+theme_override_font_sizes/font_size = 40
+text = "*"
+justification_flags = 162
+
+[node name="text" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("3_iee8y")
+theme_override_font_sizes/font_size = 40
+text = "TEXT AAAAAAAAAAAAAAAAAAAaasssssssssssssssssssssssssssssssssssssssdasd"
+autowrap_mode = 1
+justification_flags = 162
+visible_characters = 0
+visible_ratio = 0.0
