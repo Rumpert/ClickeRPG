@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://uutq4belcj7g"]
+[gd_scene load_steps=4 format=3 uid="uid://uutq4belcj7g"]
 
 [ext_resource type="Script" path="res://scenes/text_box.gd" id="1_qtd1y"]
 [ext_resource type="Texture2D" uid="uid://bjuxgchom1188" path="res://assets/text_box_bg.png" id="1_vmska"]
-[ext_resource type="FontFile" uid="uid://47bq3s8dc0lt" path="res://assets/font/Adventurer.ttf" id="2_rwibo"]
-[ext_resource type="FontFile" uid="uid://dtlbgtbrjv7md" path="res://assets/font/LastPriestess.ttf" id="3_iee8y"]
+[ext_resource type="FontFile" uid="uid://htq7svvbjgc6" path="res://assets/font/KiwiSoda.ttf" id="3_we88p"]
 
 [node name="TextBox" type="CanvasLayer"]
 script = ExtResource("1_qtd1y")
@@ -40,7 +39,7 @@ custom_minimum_size = Vector2(23, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-theme_override_fonts/font = ExtResource("2_rwibo")
+theme_override_fonts/font = ExtResource("3_we88p")
 theme_override_font_sizes/font_size = 40
 text = "*"
 justification_flags = 162
@@ -49,10 +48,10 @@ justification_flags = 162
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme_override_fonts/font = ExtResource("3_iee8y")
+theme_override_fonts/font = ExtResource("3_we88p")
 theme_override_font_sizes/font_size = 40
 text = "TEXT AAAAAAAAAAAAAAAAAAAaasssssssssssssssssssssssssssssssssssssssdasd"
-autowrap_mode = 1
+autowrap_mode = 3
 justification_flags = 162
 visible_characters = 0
 visible_ratio = 0.0

@@ -13,3 +13,9 @@ config_version=5
 config/name="ClickeRPG"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SaveManager="*res://GlobalScripts/save_manager.gd"
+CharacterTypes="*res://GlobalScripts/character_types.gd"
+GlobalPlayer="*res://GlobalScripts/global_player.gd"

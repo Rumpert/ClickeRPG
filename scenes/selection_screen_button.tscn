@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdsrf5c2ypl1y"]
+
+[ext_resource type="FontFile" uid="uid://htq7svvbjgc6" path="res://assets/font/KiwiSoda.ttf" id="1_4tx0l"]
+[ext_resource type="Script" path="res://scenes/selection_screen_button.gd" id="1_r1o1i"]
+
+[node name="Selection_screen_button" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_4tx0l")
+theme_override_font_sizes/font_size = 60
+script = ExtResource("1_r1o1i")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
